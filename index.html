@@ -7,7 +7,7 @@
 <style>
         /* Enhanced typography and spacing */
         h1, h2, h3, h4 {
-            font-family: 'Century Gothic', Arial, sans-serif;
+            font-family: 'Century Gothic';
             font-weight: bold;
             letter-spacing: 0.5px;
         }
@@ -42,6 +42,7 @@
         body {
             background-color: #f5f8fb;
             color: #2c3e50;
+            padding-top: 120px; /* ajusta este valor si el header es más alto */
         }
 
         header {
@@ -49,6 +50,13 @@
             color: #fff;
             padding: 15px 20px;
             border-bottom: 4px solid #1d3f65;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 9999;
+            background: white; /* evita que se vea transparente sobre el fondo */
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15)    
         }
 
         nav a {
