@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Plan Estratégico - Asistencias Disan SAS</title>
+<style>
+        /* Enhanced typography and spacing */
+        h1, h2, h3, h4 {
+            font-family: 'Century Gothic', Arial, sans-serif;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 0.8rem;
+        }
+
+        h3 {
+            font-size: 1.4rem;
+            margin-bottom: 0.6rem;
+        }
+
+        p, li {
+            line-height: 1.6;
+            margin-bottom: 0.8rem;
+        }
+
+        /* Section spacing */
+        section {
+            padding: 40px 20px;
+            margin-bottom: 40px;
+        }
+
+        /* Corporate color theme */
+        body {
+            background-color: #f5f8fb;
+            color: #2c3e50;
+        }
+
+        header {
+            background: #234f7e;
+            color: #fff;
+            padding: 15px 20px;
+            border-bottom: 4px solid #1d3f65;
+        }
+
+        nav a {
+            color: white;
+        }
+
+        nav a:hover {
+            color: #d6e8fa;
+        }
+
+        /* Card-like sections */
+        .content-section {
+            background: white;
+            border-radius: 14px;
+            padding: 30px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .content-section:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+        }
+
+ body {
+   font-family: 'Century Gothic', Arial, sans-serif;
+   margin: 0;
+   background: #f4f7fb;
+   color: #1a1a1a;
+ }
+ header {
+   background: #0a3a63;
+   color: white;
+   padding: 15px 20px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+ }
+ #logo {
+   width: 180px;
+   height: 80px;   
+   background: white;
+   border-radius: 8px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-weight: bold;
+   color: #0a3a63;
+ }
+ nav {
+   display: flex;
+   gap: 20px;
+ }
+ nav a {
+   color: white;
+   text-decoration: none;
+   padding: 10px 15px;
+   border-radius: 5px;
+   transition: 0.3s;
+ }
+ nav a:hover {
+   background: #15578f;
+ }
+ /* Hamburger */
+ #hamburger {
+   display: none;
+   font-size: 28px;
+   cursor: pointer;
+ }
+ @media (max-width: 768px) {
+   nav {
+     display: none;
+     flex-direction: column;
+     background: #0a3a63;
+     width: 100%;
+     padding: 10px 0;
+   }
+   nav.show {
+     display: flex;
+   }
+   #hamburger {
+     display: block;
+   }
+ }
+ section {
+   display: none;
+   padding: 40px;
+   animation: fadeIn 0.6s ease;
+ }
+ section.active {
+   display: block;
+ }
+ h2:hover, p:hover, li:hover {
+   color: #0a3a63;
+   transition: 0.3s;
+ }
+ @keyframes fadeIn {
+   from { opacity: 0; transform: translateY(20px); }
+   to { opacity: 1; transform: translateY(0); }
+ }
+        /* Background corporate pattern */
+        body {
+            background-image: url('data:image/svg+xml,%3Csvg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg"%3E%3Crect width="300" height="300" fill="%23f5f8fb"/%3E%3Ccircle cx="150" cy="150" r="4" fill="%23234f7e" opacity="0.15"/%3E%3C/svg%3E');
+            background-size: 300px 300px;
+        }
+
+        /* Header gradient */
+        header {
+            background: linear-gradient(90deg, #1d3f65, #234f7e, #2f6aa3);
+        }
+
+        /* Button gradient */
+        nav a {
+            background: linear-gradient(90deg, #234f7e, #2f6aa3);
+            padding: 10px 16px;
+            border-radius: 6px;
+        }
+        nav a:hover {
+            background: linear-gradient(90deg, #2f6aa3, #234f7e);
+        }
+
+        /* Scroll animations */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Icon placeholders for sections */
+        .section-icon {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 15px;
+            opacity: 0.85;
+        }
+</style>
+</head>
+<body>
+<header>
+ <div id="logo"><img src="Logo.png" alt="Logo Asistencias Disan" style="width:100%; height:100%; object-fit:contain;"/></div>
+ <div id="hamburger">☰</div>
+ <nav id="nav-menu">
+   <a href="#" onclick="showSection('intro')">Introducción</a>
+   <a href="#" onclick="showSection('objetivos')">Objetivos Estratégicos</a>
+   <a href="#" onclick="showSection('metas')">Metas y Estrategias</a>
+   <a href="#" onclick="showSection('comunicacion')">Comunicación del Plan</a>
+ </nav>
+</header>
+
+<section class="reveal" id="intro" class="active">
+ <h2>Introducción</h2>
+    <img src="intro.jpg" alt="Imagen introducción">
+ <p>Asistencias Disan SAS desempeña un rol crucial dentro de la cadena de atención marítimo-portuaria en las ciudades de Santa Marta y Barranquilla. Su labor consiste en proporcionar transporte especializado, acompañamiento logístico y asistencia médica a tripulantes de motonaves provenientes de diversos países, lo que convierte a la empresa en un aliado estratégico para autoridades portuarias y agencias marítimas.</p>
+ <p>Estas operaciones se desarrollan en entornos complejos donde convergen altos niveles de riesgo, condiciones cambiantes y dinámicas multiculturales. Por ello, este plan estratégico no solo consolida los lineamientos de Seguridad y Salud en el Trabajo (SST) sino que también integra el fortalecimiento de habilidades blandas como la comunicación, la empatía y la resolución eficaz de problemas, fundamentales para mejorar la calidad del servicio y la percepción de nuestros aliados.</p>
+ <p>El propósito general de este plan es establecer una ruta clara para el crecimiento sostenible de la empresa, reforzando la cultura organizacional, optimizando procesos internos y fortaleciendo las competencias del equipo humano.</p>
+</section>
+
+<section class="reveal" id="objetivos">
+ <h2>Objetivos Estratégicos</h2>
+    <img src="objetivo.jpg" alt="Imagen objetivos estratégicos">
+ <p>Nuestro marco estratégico se centra en potenciar los procesos operativos, elevar la calidad del servicio y consolidar una cultura empresarial enfocada en la prevención y el bienestar integral. Cada objetivo responde a necesidades identificadas durante el diagnóstico situacional y a expectativas de los aliados del sector marítimo-portuario.</p>
+ <ul>
+   <li><strong>Fortalecer la calidad del servicio:</strong> Implementar mecanismos de control y seguimiento, mejorar los tiempos de respuesta y fortalecer la atención humanizada, con protocolos claros que reflejen la excelencia operativa que exige el sector.</li>
+   <li><strong>Optimizar la eficiencia operativa y tecnológica:</strong> Modernizar los procesos internos mediante herramientas digitales de trazabilidad, mejorando la comunicación interna y asegurando una administración más ágil de los servicios.</li>
+   <li><strong>Consolidar una cultura de prevención y bienestar laboral:</strong> Desarrollar programas continuos de formación, acompañamiento emocional y promoción del autocuidado, que impacten positivamente en la motivación, salud y desempeño de los colaboradores.</li>
+ </ul>
+</section>
+
+<section class="reveal" id="metas">
+ <h2>Metas y Estrategias</h2>
+    <img src="metas.jpg" alt="Imagen metas y estrategias">
+ <p>Las metas propuestas están diseñadas para generar resultados medibles, sostenibles y alineados con las demandas del sector portuario. Cada estrategia se estructura para abordar factores operativos, humanos y tecnológicos.</p>
+
+ <h3>Meta 1: Reducción de incidentes en un 15% anual</h3>
+ <p>La seguridad operacional es uno de los pilares fundamentales de Asistencias Disan. Para lograr un entorno más seguro tanto en carretera como dentro de zonas portuarias, se implementarán acciones preventivas reforzadas.</p>
+ <ul>
+   <li>Capacitación continua en protocolos de seguridad portuaria y vial.</li>
+   <li>Uso adecuado de EPP con seguimiento y verificación constante.</li>
+   <li>Evaluación mensual de incidentes, análisis de tendencias y correctivos inmediatos.</li>
+   <li>Talleres de ergonomía, pausas activas y autocuidado físico.</li>
+ </ul>
+
+ <h3>Meta 2: Implementación de un programa de bienestar emocional</h3>
+ <p>El bienestar emocional influye directamente en el desempeño, las relaciones laborales y la calidad del servicio ofrecido a los tripulantes. Por ello, se busca fortalecer la salud mental y la convivencia laboral.</p>
+ <ul>
+   <li>Sesiones de escucha activa y acompañamiento psicológico profesional.</li>
+   <li>Espacios de conversación segura entre colaboradores y líderes.</li>
+   <li>Programas trimestrales de manejo del estrés, resiliencia y comunicación positiva.</li>
+   <li>Promoción de prácticas de autocuidado y equilibrio entre vida laboral y personal.</li>
+ </ul>
+
+ <h3>Meta 3: Fomentar una cultura preventiva sólida</h3>
+ <p>La prevención es una responsabilidad compartida. Para fortalecer esta cultura se plantean acciones que impulsen la formación, la participación y el compromiso de todo el equipo.</p>
+ <ul>
+   <li>Inducciones completas para nuevos colaboradores con énfasis en riesgo portuario.</li>
+   <li>Evaluaciones periódicas de riesgos y retroalimentación oportuna.</li>
+   <li>Calendario anual de capacitaciones preventivas obligatorias.</li>
+   <li>Programas de reconocimiento al cumplimiento ejemplar de medidas de seguridad.</li>
+ </ul>
+</section>
+
+<section class="reveal" id="comunicacion">
+ <h2>Estrategia de Comunicación del Plan</h2>
+    <img src="barco.jpg" alt="Imagen comunicación del plan">
+ <p>La comunicación del plan estratégico debe garantizar que todo el equipo, desde el personal operativo hasta la dirección, comprenda claramente los objetivos, las metas y los beneficios esperados. Para ello es necesario utilizar herramientas accesibles, atractivas y que permitan una rápida asimilación de la información.</p>
+ <p>Se propone el diseño de una campaña interna que combine elementos visuales llamativos con mensajes claros y motivacionales. Esta campaña podrá implementarse tanto en formato digital como impreso.</p>
+ 
+ <h3>Formatos recomendados</h3>
+ <ul>
+   <li><strong>Infografía digital interactiva:</strong> Con botones que muestren cada objetivo y sus estrategias.</li>
+   <li><strong>Folleto plegable informativo:</strong> Ideal para reuniones, inducciones y capacitaciones.</li>
+   <li><strong>Banners y afiches internos:</strong> Ubicados en zonas comunes del personal.</li>
+ </ul>
+
+ <h3>Imágenes sugeridas</h3>
+ <ul>
+   <li><strong>Entorno portuario:</strong> Fotografías de muelles, motonaves y vehículos operativos.</li>
+   <li><strong>Seguridad laboral:</strong> Íconos de EPP, señalización y protocolos preventivos.</li>
+   <li><strong>Trabajo en equipo:</strong> Colaboradores interactuando en tareas operativas.</li>
+   <li><strong>Bienestar emocional:</strong> Representaciones gráficas de equilibrio, salud mental y resiliencia.</li>
+   <li><strong>Procesos y tecnología:</strong> Imágenes de software, dispositivos móviles y paneles de control.</li>
+ </ul>
+ <p>Esta estrategia busca que cada colaborador identifique con claridad su papel dentro del plan y se sienta parte activa del crecimiento y la seguridad de la empresa.</p>
+</section>
+
+<script>
+const hamburger = document.getElementById("hamburger");
+const navMenu = document.getElementById("nav-menu");
+
+hamburger.onclick = () => {
+  navMenu.classList.toggle("show");
+};
+
+function showSection(id) {
+  document.querySelectorAll("section").forEach(sec => sec.classList.remove("active"));
+  document.getElementById(id).classList.add("active");
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+</script>
+</body>
+</html>
