@@ -188,6 +188,30 @@
             margin-bottom: 15px;
             opacity: 0.85;
         }
+
+       #main-title {
+    font-size: 4.5rem;        /* Mucho más grande */
+    text-align: center;
+    line-height: 1.5;         /* Interlineado solicitado */
+    font-family: 'Century Gothic', sans-serif;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #0a3a63;
+
+    /* Sombra elegante */
+    text-shadow: 3px 3px 10px rgba(0,0,0,0.25);
+
+    /* Efecto visual suave */
+    opacity: 0;
+    transform: scale(0.95);
+    animation: fadeGrow 1.2s ease-out forwards;
+}
+
+/* Animación del efecto */
+@keyframes fadeGrow {
+    0% { opacity: 0; transform: scale(0.95); }
+    100% { opacity: 1; transform: scale(1); }
+}
 </style>
 </head>
 <body>
@@ -202,9 +226,7 @@
  </nav>
 </header>
 
-<h1 class="text-6xl font-bold text-center mt-8 tracking-wide" style="font-family: 'Century Gothic', sans-serif;">
-PLAN ESTRATEGICO SST 2026<br>ASISTENCIAS DISAN
-</h1>
+<h1 id="main-title">PLAN ESTRATEGICO SST 2026<br>ASISTENCIAS DISAN</h1>
         
 <section class="reveal" id="intro" class="active">
  <h2>Introducción</h2>
